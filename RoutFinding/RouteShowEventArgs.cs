@@ -8,8 +8,15 @@ using System.Threading.Tasks;
 
 namespace RoutFinding
 {
-    class RouteShowEventArgs : EventArgs
+    public class RouteShowEventArgs : EventArgs
     {
+        /// <summary>
+        /// Creating object for showing each step
+        /// </summary>
+        /// <param name="field"></param>
+        /// <param name="curPoint"></param>
+        /// <param name="initPoint"></param>
+        /// <param name="finishPoint"></param>
         public RouteShowEventArgs(Cell[,] field, Point curPoint, Point initPoint, Point finishPoint )
         {
             Field = field;

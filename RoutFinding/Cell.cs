@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace RoutFinding
 {
     public enum Cell
-    {
-        Route,
+    {        
         Free,
-        Excepted,
-        Obstacle
+        Obst,
+        Excep,
+        Route
     }
 }
